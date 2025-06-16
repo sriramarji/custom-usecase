@@ -1,9 +1,19 @@
 name: Custom use case
 
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
+
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Choose action: launch or destroy'
+        required: true
+        type: choice
+        options:
+          - launch
+          - destroy
 
 jobs:
   deploy:
