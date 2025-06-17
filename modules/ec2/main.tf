@@ -47,7 +47,7 @@ resource "aws_instance" "webserver" {
 EOF
 
   tags = {
-    Name = "custom-ec2"
+    Name = var.name
   }
 }
 

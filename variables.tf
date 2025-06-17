@@ -16,3 +16,9 @@ variable "my-keyname" {
   type        = string
   default     = "Hcl-prac-training"
 }
+
+variable "my-inst-name" {
+  description = "EC2 instance name"
+  type        = string
+  default     = "custom-usecase-ec2"
+}
